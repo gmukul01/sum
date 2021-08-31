@@ -12,7 +12,7 @@
     "author": "Mukul",
     "license": "ISC",
     "publishConfig": {
-        "registry": "https://registry.npmjs.org/mbansal-experiments"
+        "registry": "https://registry.npmjs.org"
     },
     "scripts": {
         "prepare": "husky install",
