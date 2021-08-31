@@ -1,6 +1,6 @@
 {
     "name": "@mbansal-experiments/calculator",
-    "version": "1.1.0",
+    "version": "1.4.0",
     "description": "",
     "main": "dist/cjs/index.js",
     "module": "dist/es/index.js",
