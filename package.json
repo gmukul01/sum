@@ -1,5 +1,5 @@
 {
-    "name": "@mbansal-experiments/sum",
+    "name": "@mbansal-experiments/calculator",
     "version": "1.1.0",
     "description": "",
     "main": "dist/cjs/index.js",
@@ -60,11 +60,5 @@
     "prettier": "@medly/prettier-config",
     "eslintConfig": {
         "extends": "@medly"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/gmukul01/sum.git"
-    },
-    "homepage": "https://github.com/gmukul01/sum#readme",
-    "bugs": "https://github.com/gmukul01/sum/issues"
+    }
 }
