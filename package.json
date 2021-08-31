@@ -1,5 +1,5 @@
 {
-    "name": "@gmukul01/sum",
+    "name": "@mbansal-experiments/sum",
     "version": "0.0.0",
     "description": "",
     "main": "dist/cjs/index.js",
@@ -9,10 +9,10 @@
         "dist"
     ],
     "keywords": [],
-    "author": "gmukul01",
+    "author": "Mukul",
     "license": "ISC",
     "publishConfig": {
-        "registry": "https://registry.npmjs.org/gmukul01"
+        "registry": "https://registry.npmjs.org/mbansal-experiments"
     },
     "scripts": {
         "prepare": "husky install",
