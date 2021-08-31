@@ -1,0 +1,70 @@
+{
+    "name": "@gmukul01/sum",
+    "version": "0.0.0",
+    "description": "",
+    "main": "dist/cjs/index.js",
+    "module": "dist/es/index.js",
+    "types": "dist/es/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "keywords": [],
+    "author": "gmukul01",
+    "license": "ISC",
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org/gmukul01"
+    },
+    "scripts": {
+        "prepare": "husky install",
+        "build": "rollup --config node_modules/@medly/rollup-config/index.js",
+        "lint": "eslint 'src/**/*.ts'",
+        "release": "HUSKY=0 semantic-release",
+        "start": "ts-node ./src/index.ts",
+        "pretest": "yarn typecheck",
+        "test": "jest --passWithNoTests --coverage -w=50%",
+        "typecheck": "tsc -p tsconfig.json"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "@commitlint/cli": "^8.3.5",
+        "@commitlint/config-conventional": "^8.3.4",
+        "@medly/babel-config": "^0.1.4",
+        "@medly/eslint-config": "^0.3.1",
+        "@medly/prettier-config": "^0.1.1",
+        "@medly/rollup-config": "^0.7.2",
+        "@medly/semantic-release-config": "^0.1.5",
+        "@medly/typescript-config": "^0.2.3",
+        "commitizen": "^4.2.4",
+        "cross-env": "^7.0.3",
+        "cz-conventional-changelog": "^3.3.0",
+        "husky": "6.0.0",
+        "jest": "^27.1.0",
+        "ts-node": "^9.1.1"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
+    },
+    "commitlint": {
+        "extends": [
+            "@commitlint/config-conventional"
+        ]
+    },
+    "release": {
+        "extends": "@medly/semantic-release-config"
+    },
+    "babel": {
+        "extends": "@medly/babel-config"
+    },
+    "prettier": "@medly/prettier-config",
+    "eslintConfig": {
+        "extends": "@medly"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/gmukul01/sum.git"
+    },
+    "homepage": "https://github.com/gmukul01/sum#readme",
+    "bugs": "https://github.com/gmukul01/sum/issues"
+}
